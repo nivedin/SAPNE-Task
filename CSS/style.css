@@ -172,3 +172,19 @@ main{
     }
   }
 /* //////ANIMATION//////// */
+
+:root {
+    --shadow: #512DA8;
+    --scrollbarBG:rgb(247, 247, 247);
+    --thumbBG: #B721FF
+}
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-track {
+     background: var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb {
+     background-color: var(--thumbBG);
+     box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 15px 5px black;
+}
